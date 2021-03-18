@@ -14,8 +14,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152aaf78-9b10-4910-bd57-f5a886eb03bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+    <list default="true" id="152aaf78-9b10-4910-bd57-f5a886eb03bf" name="Default Changelist" comment="Initial commit - gradle files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +76,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Manvita Joshi &lt;manvitaajoshi@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1oydrS6ExseeYAZPXMM6cbOuILn" />
@@ -91,11 +95,11 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-11T06:12:13.697Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CreDeb-Repo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -215,7 +219,32 @@
       <option name="presentableId" value="Default" />
       <updated>1614262962639</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit - gradle files">
+      <created>1616059218568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616059218569</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit - gradle files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit - gradle files" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="158" y="73" key="#PSD" timestamp="1615472122727">
@@ -246,14 +275,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="500" y="154" key="AndroidCreateXmlResourceDialog/0.0.1280.680@0.0.1280.680" timestamp="1615542612862" />
-    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1616059093597">
+    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1616059867004">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="294" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1616059093597" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1616058823189">
+    <state x="294" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1616059867004" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1616059388794">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1616058823189" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1616059388794" />
     <state width="1236" height="246" key="GridCell.Tab.0.bottom" timestamp="1615626948288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -286,14 +315,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="618" height="97" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615454462510" />
-    <state x="316" y="40" key="NewModule_or_Project.wizard" timestamp="1616058850489">
+    <state x="316" y="40" key="NewModule_or_Project.wizard" timestamp="1616059394642">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="316" y="40" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1616058850489" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1615543737892">
+    <state x="316" y="40" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1616059394642" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1616060558743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1615543737892" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1616060558743" />
     <state x="452" y="119" key="chooseDestDirectoryDialog" timestamp="1615467634755">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -306,10 +335,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1615443539509" />
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1616058345883">
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1616060199900">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1616058345883" />
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1616060199900" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1615541112664">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
