@@ -14,13 +14,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152aaf78-9b10-4910-bd57-f5a886eb03bf" name="Default Changelist" comment="" />
+    <list default="true" id="152aaf78-9b10-4910-bd57-f5a886eb03bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="49229002" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_API_24" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -73,7 +76,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1oydrS6ExseeYAZPXMM6cbOuILn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -84,7 +91,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-11T06:12:13.697Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CreDeb-Repo" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -239,10 +246,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="500" y="154" key="AndroidCreateXmlResourceDialog/0.0.1280.680@0.0.1280.680" timestamp="1615542612862" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1615632622141">
+    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1616059093597">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615632622141" />
+    <state x="294" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1616059093597" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1616058823189">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1616058823189" />
     <state width="1236" height="246" key="GridCell.Tab.0.bottom" timestamp="1615626948288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -275,6 +286,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="618" height="97" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615454462510" />
+    <state x="316" y="40" key="NewModule_or_Project.wizard" timestamp="1616058850489">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="316" y="40" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1616058850489" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1615543737892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -291,10 +306,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1615443539509" />
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1616035552088">
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1616058345883">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1616035552088" />
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1616058345883" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1615541112664">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
