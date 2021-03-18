@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "479596556967",
+    "firebase_url": "https://credeb-adaf1-default-rtdb.firebaseio.com",
+    "project_id": "credeb-adaf1",
+    "storage_bucket": "credeb-adaf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479596556967:android:fc221d35dcd8b2241f2182",
+        "android_client_info": {
+          "package_name": "com.example.credeb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479596556967-0rlu6qepa9f7i7oclsgj13avofgmp03s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX3vIKn4nf7WMB3AM1i42USknL0SUDmXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479596556967-0rlu6qepa9f7i7oclsgj13avofgmp03s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

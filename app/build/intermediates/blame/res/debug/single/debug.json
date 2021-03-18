@@ -1,0 +1,246 @@
+[
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_phone_android_24.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_phone_android_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_phone_android_24.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_phone_android_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_otp_success.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_otp_success.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_background1.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-mdpi\\background1.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_background1.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-xxxhdpi\\background1.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_display_menu.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_display_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_iconn.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_iconn.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_phone_android_24.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_phone_android_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_background1.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-xhdpi\\background1.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-hdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_iconn.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_iconn.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-mdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_pink.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable\\button_pink.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_icon.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\font_regular.ttf.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\font\\regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_credeb.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable\\icon_credeb.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-xhdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_icon.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-xxxhdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_phone_android_24.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_phone_android_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_iconn.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_iconn.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_phone_android_24.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_phone_android_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_background1.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-ldpi\\background1.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_iconn.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_iconn.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_icon.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_icon.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_background1.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-xxhdpi\\background1.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-ldpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_background1.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-hdpi\\background1.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_icon.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_otp_verif.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_otp_verif.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\font_bold.ttf.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\font\\bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_field.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable\\input_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_phone_android_24.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_phone_android_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable-xxhdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_black.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\drawable\\button_black.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_phone_android_24.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_phone_android_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_iconn.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_iconn.png"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    }
+]

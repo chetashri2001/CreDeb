@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_otp_verif.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_otp_verif.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_display_menu.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_display_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_profile.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\user_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_otp_success.xml",
+        "source": "C:\\Users\\Manvita\\AndroidStudioProjects\\CreDeb\\app\\src\\main\\res\\layout\\activity_otp_success.xml"
+    }
+]
