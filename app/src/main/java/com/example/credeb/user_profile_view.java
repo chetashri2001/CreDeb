@@ -51,7 +51,15 @@ public class user_profile_view extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        
+        update_button=findViewById(R.id.update_button);
+          update_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(user_profile_view.this, UserProfileUpdateActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
