@@ -19,7 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class UserProfileUpdate extends AppCompatActivity {
+public class UserProfileUpdateActivity extends AppCompatActivity {
 
     EditText fname;
     EditText lname;
@@ -44,16 +44,13 @@ public class UserProfileUpdate extends AppCompatActivity {
         userID = firebaseUser.getUid();
         display_user_info();
 
-
-
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String f_name = fname.getText().toString();
-                final String l_name = lname.getText().toString();
-                final String mobile_no = mobile.getText().toString();
-                final String e_mail = email.getText().toString();
-
+                String f_name = fname.getText().toString();
+                String l_name = lname.getText().toString();
+                String mobile_no = mobile.getText().toString();
+                String e_mail = email.getText().toString();
 
                 if (TextUtils.isEmpty(f_name)) {
                     fname.setError("First name is required.");
@@ -74,24 +71,14 @@ public class UserProfileUpdate extends AppCompatActivity {
                     email.setError("Email is required.");
                     return;
                 }
-            }
 
-        });
-
-        update_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String f_name = fname.getText().toString();
-                String l_name = lname.getText().toString();
-                String mobile_no = mobile.getText().toString();
-                String e_mail = email.getText().toString();
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("fname").setValue(f_name);
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("lname").setValue(l_name);
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("email_ID").setValue(e_mail);
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("mobile").setValue(mobile_no);
 
 
-                Toast.makeText(UserProfileUpdate.this, "Update successful", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserProfileUpdateActivity.this, "Update successful", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -104,7 +91,6 @@ public class UserProfileUpdate extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User user = snapshot.getValue(User.class);
                 assert user != null;
-                //String txt = user.getFname() + " " + user.getLname();
                 fname.setText(user.getFname());
                 lname.setText(user.getLname());
                 mobile.setText(user.getMobile());
