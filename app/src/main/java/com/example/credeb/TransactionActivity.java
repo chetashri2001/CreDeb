@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.credeb.Model.BankAccount;
 import com.example.credeb.Model.User;
@@ -28,14 +29,19 @@ import java.util.HashMap;
 public class TransactionActivity extends AppCompatActivity {
 
     EditText amount, ifsc_rec, receiver;
-    Button pay;
-   String userID;
-    static String acc_num;
+    Button pay, abort;
+   String userID, sender_acc_no;
+//    static String acc_num;
     private FirebaseUser firebaseUser;
     private FirebaseCallback callback;
+    //ferkerrejhbg
 
     public interface FirebaseCallback {
         void onResponse(String name);
+    }
+    @Override
+    public void onBackPressed() {
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +50,7 @@ public class TransactionActivity extends AppCompatActivity {
         amount = findViewById(R.id.amt);
         receiver = findViewById(R.id.receiverAcc);
         pay = findViewById(R.id.payButton);
+        abort = findViewById(R.id.abortButton);
         ifsc_rec = findViewById(R.id.receiverIFSC);
         HashMap<String, Object> map = new HashMap<>();
         assert firebaseUser != null;
@@ -52,13 +59,11 @@ public class TransactionActivity extends AppCompatActivity {
         Log.d("transac", "uid  "+ FirebaseAuth.getInstance().getCurrentUser().getUid());
         userID =  FirebaseAuth.getInstance().getCurrentUser().getUid();
         FirebaseAuth mAuth;
-
         mAuth = FirebaseAuth.getInstance();
-
         FirebaseUser user = mAuth.getCurrentUser();
-
         String UID = user.getUid();
         Log.d("transac", "uid new "+ FirebaseAuth.getInstance().getCurrentUser().getUid());
+
         pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,22 +86,61 @@ public class TransactionActivity extends AppCompatActivity {
                     ifsc_rec.setError("amount is required.");
                     return;
                 }
+                DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("App Database").child("User bank details");
+                final String[] accountNumber = new String[1];
+                final String[] balance = new String[1];
+                final String[] cust_ids = new String[2];
+                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        Log.d("sender", "hi " + accountNumber[0]);
+                        for (DataSnapshot snap : snapshot.getChildren()) {
+                            Log.d("sender", "hi in " + accountNumber[0]);
+                            UserBankDetails userBankDetails = snap.getValue(UserBankDetails.class);
+                            assert userBankDetails != null;
+                            String val = userBankDetails.getUserID();
+                            Log.d("acc", "get val " + val);
+                            if (val.equals(UID)) {
+                                balance[0] = userBankDetails.getBalance();
+                                float f1 = Float.parseFloat(balance[0]);
+                                float f2 = Float.parseFloat(amount_no);
+                                if (Float.compare(f1, f2) < 0) {
+                                    Toast.makeText(TransactionActivity.this, "Balance insufficient", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(TransactionActivity.this, DisplayMenuActivity.class);
+                                    startActivity(intent);
+                                }
+                                }
+                                Log.d("acc", "acc hi" + accountNumber[0]);
+                            }
+                        }
+
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+
+
+                //Log.d("acc", "acc hi" + sender_acc_no);
                 Intent i = new Intent(TransactionActivity.this, OtpVerifActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("Amount to be transferred", amount_no);
                 bundle.putString("Receiver's account number", receiver_acc_no);
                 bundle.putString("Receiver's IFSC", receiver_ifsc);
                 bundle.putString("UID", UID);
-//
-//                public void readFirebaseName(FirebaseCallback callback) {
-//
-//                }
-
-                bundle.putString("Sender's acc num", acc_num);
-                Log.d("transac", " acc num sender  "+ acc_num);
                 i.putExtras(bundle);
                 startActivity(i);
 
+            }
+        });
+
+        abort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(TransactionActivity.this, DisplayMenuActivity.class);
+                startActivity(i);
             }
         });
     }
