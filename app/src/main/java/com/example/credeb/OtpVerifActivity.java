@@ -179,6 +179,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.credeb.Model.BankAccount;
+import com.example.credeb.Model.BankUserDetails;
 import com.example.credeb.Model.UserBankDetails;
 import com.example.credeb.Model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -202,22 +203,26 @@ import java.util.concurrent.TimeUnit;
 
 public class OtpVerifActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
 
     private PhoneAuthProvider.ForceResendingToken forceResendingToken;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private String mVerificationId;
     private static final String TAG = "MAIN_TAG";
     private FirebaseAuth firebaseAuth;
-    Button getotp, verifyotp;
-    EditText verif_num; //, phone_num;
+    Button getotp, verifyotp, abort;
+    EditText verif_num, phone_num;
     TextView resend_code;
     private ProgressDialog pd;
     //String phone_num;
-    String phone_num;
+    //uncomment this for db mobile
+    //String phone_num;
+    String ac_num;
     //String userID; //phone_num;
     private FirebaseUser firebaseUser;
+    @Override
+    public void onBackPressed() {
 
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -229,7 +234,7 @@ public class OtpVerifActivity extends AppCompatActivity {
 //        userID = firebaseUser.getUid();
         pd = new ProgressDialog(this);
         pd.setTitle("Please Wait");
-
+        abort = findViewById(R.id.abortBt);
 
         Bundle bundle = getIntent().getExtras();
         assert bundle != null;
@@ -262,38 +267,46 @@ public class OtpVerifActivity extends AppCompatActivity {
         };
 
 
-       //phone_num = findViewById(R.id.phoneNumber);
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("App Database").child("User details");
-        final String[] phoneNumber = new String[1];
-        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+        phone_num = findViewById(R.id.phoneNumber);
+        //uncomment this for db mobile
+//        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("App Database").child("User details");
+//        final String[] phoneNumber = new String[1];
+//        final String[] accNum = new String[1];
+//        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                for (DataSnapshot snap : snapshot.getChildren()) {
+//                    User userDetails = snap.getValue(User.class);
+//                    assert userDetails != null;
+//                    String val = userDetails.getId();
+//                    if (val.equals(user_id)) {
+//                        phoneNumber[0] = userDetails.getMobile();
+//                        phone_num = phoneNumber[0];
+//                        Log.d("phone", "mobile no " + phone_num);
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+        abort.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot snap : snapshot.getChildren()) {
-                    User userDetails = snap.getValue(User.class);
-                    assert userDetails != null;
-                    String val = userDetails.getId();
-                    if (val.equals(user_id)) {
-                        phoneNumber[0] = userDetails.getMobile();
-                        phone_num = phoneNumber[0];
-                        Log.d("phone", "mobile no "+  phone_num);
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public void onClick(View view) {
+                Intent i = new Intent(OtpVerifActivity.this, DisplayMenuActivity.class);
+                startActivity(i);
             }
         });
-
-
         getotp = findViewById(R.id.GETOTP);
         getotp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //String phone = phone_num.getText().toString().trim();
-                String phone = "+91" + phone_num;
-                Log.d("phone", "mobile "+ phone);
+                String phone = phone_num.getText().toString().trim();
+                //uncomment this for db mobile
+                //String phone = "+91" + phone_num;
+                Log.d("phone", "mobile " + phone);
                 if (TextUtils.isEmpty(phone)) {
                     Toast.makeText(OtpVerifActivity.this, "Enter Phone Number", Toast.LENGTH_SHORT).show();
                 } else {
@@ -307,11 +320,13 @@ public class OtpVerifActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String code = verif_num.getText().toString().trim();
+                String accountnumber = "" + ac_num;
+                Log.d("VERIF ID", "dekhu toh " + accountnumber);
                 if (TextUtils.isEmpty(code)) {
                     Toast.makeText(OtpVerifActivity.this, "Enter Code Number", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    verifyTheCode(mVerificationId, code);
+                    verifyTheCode(mVerificationId, code, accountnumber);
                 }
             }
         });
@@ -319,8 +334,9 @@ public class OtpVerifActivity extends AppCompatActivity {
         resend_code.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //String phone = phone_num.getText().toString().trim();
-               String phone = "+91" + phone_num;
+                String phone = phone_num.getText().toString().trim();
+                //uncomment this for db mobile
+                // String phone = "+91" + phone_num;
                 if (TextUtils.isEmpty(phone)) {
                     Toast.makeText(OtpVerifActivity.this, "Enter Phone Number", Toast.LENGTH_SHORT).show();
                 } else {
@@ -330,7 +346,7 @@ public class OtpVerifActivity extends AppCompatActivity {
         });
     }
 
-    private void verifyTheCode(String mVerificationId, String code) {
+    private void verifyTheCode(String mVerificationId, String code, String accountnumber) {
 
         Log.d("VERIF ID", "verif id " + mVerificationId + " code " + code);
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
@@ -347,14 +363,14 @@ public class OtpVerifActivity extends AppCompatActivity {
                     String sender_acc_num = bundle.getString("Sender's acc num");
                     String user_id = bundle.getString("UID");
 
-                    Log.d("verif", "sender acc " + sender_acc_num);
+
                     Log.d("verif", "rece acc " + receivers_acc_num);
                     Log.d("verif", "rece ifsc " + receiver_ifsc);
                     Log.d("verif", "amount " + amount_to_be_transferred);
                     Log.d("verif", "uid  " + user_id);
 
 
-                   // String user_id = bundle.getString("UID");
+                    // String user_id = bundle.getString("UID");
 
 //                    //verification successful we will start the profile activity
 ////                    Intent intent = new Intent(OtpVerifActivity.this, OtpSuccessActivity.class);
@@ -365,8 +381,9 @@ public class OtpVerifActivity extends AppCompatActivity {
                     bundle1.putString("Amount to be transferred", amount_to_be_transferred);
                     bundle1.putString("Receiver's account number", receivers_acc_num);
                     bundle1.putString("Receiver's IFSC", receiver_ifsc);
-                    bundle1.putString("Sender's acc num", sender_acc_num);
+                    bundle1.putString("Sender's acc num", accountnumber);
                     bundle1.putString("UID", user_id);
+                    Log.d("verif", "sender acc chalna chahiye " + sender_acc_num);
                     i.putExtras(bundle1);
                     startActivity(i);
 
