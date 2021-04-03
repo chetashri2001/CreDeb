@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">CreDeb</string>
     <string name="didn_t_receive_the_otp_resend">Didn\'t receive the OTP? <b>Resend</b></string>
+    <string name="title_activity_about_credeb">ScrollingActivity</string>
+    <string name="large_text">
+
+        "Due to the pandemic and the subsequent advancement in technology, almost everyone is now moving towards the facility of online banking. There are many gullible users who are unaware of the ways how they can be a victim of fraudulent activities. Scammers somehow manage to get the OTP from such users.\n\n"
+        "<b>CreDeb</b> tries to make a bank transaction as secure as possible. It gives one extra measure after the OTP verification when the money is about to get transferred. People often have undesirable experiences while lending money to their friends/relatives as they don’t pay it back on time. CreDeb gives its users the option to offer/take loans from their friends/relatives directly, without involving the bank in between. It also targets the problem created by some people who pretend that they never received any money during a transaction. The main aim of this app is to make a bank transaction easy and guard it against any fraud."
+
+    </string>
+    <string name="creators">
+
+
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>
