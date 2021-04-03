@@ -37,12 +37,13 @@ public class UserProfileUpdateActivity extends AppCompatActivity {
         fname = findViewById(R.id.fname);
         lname = findViewById(R.id.lname);
         mobile = findViewById(R.id.mobile);
-        email = findViewById(R.id.email);
+        //email = findViewById(R.id.email);
         update_button = findViewById(R.id.update_button);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         userID = firebaseUser.getUid();
         display_user_info();
+
 
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,15 +68,15 @@ public class UserProfileUpdateActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (TextUtils.isEmpty(e_mail)) {
-                    email.setError("Email is required.");
-                    return;
-                }
+//                if (TextUtils.isEmpty(e_mail)) {
+//                    email.setError("Email is required.");
+//                    return;
+//                }
 
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("fname").setValue(f_name);
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("lname").setValue(l_name);
                 FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("email_ID").setValue(e_mail);
-                FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("mobile").setValue(mobile_no);
+               // FirebaseDatabase.getInstance().getReference().child("App Database").child("User details").child(userID).child("mobile").setValue(mobile_no);
 
 
                 Toast.makeText(UserProfileUpdateActivity.this, "Update successful", Toast.LENGTH_SHORT).show();
@@ -94,7 +95,7 @@ public class UserProfileUpdateActivity extends AppCompatActivity {
                 fname.setText(user.getFname());
                 lname.setText(user.getLname());
                 mobile.setText(user.getMobile());
-                email.setText(user.getEmail_ID());
+               // email.setText(user.getEmail_ID());
 
             }
 
