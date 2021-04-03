@@ -3,6 +3,7 @@ package com.example.credeb;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -27,12 +28,14 @@ public class LoginActivity extends AppCompatActivity {
     EditText email;
     EditText password;
     Button login_Button;
+    private ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        pd = new ProgressDialog(this);
+        pd.setTitle("Please wait...");
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         register_Button = findViewById(R.id.registerButton);
@@ -65,14 +68,18 @@ public class LoginActivity extends AppCompatActivity {
                     password.setError("Password must be >= 6 characters.");
                     return;
                 }
+                pd.setMessage("Logging you in");
+                pd.show();
 
                 fAuth.signInWithEmailAndPassword(e_mail, pw).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            pd.dismiss();
                             Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), DisplayMenuActivity.class));
                         } else {
+                            pd.dismiss();
                             Toast.makeText(LoginActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
