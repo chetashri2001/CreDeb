@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         pd = new ProgressDialog(this);
-        pd.setTitle("Please wait...");
+        pd.setTitle("Please Wait");
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         register_Button = findViewById(R.id.registerButton);
