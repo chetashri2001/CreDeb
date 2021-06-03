@@ -3,6 +3,8 @@ package com.example.credeb;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -21,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Objects;
+import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -35,6 +38,20 @@ public class RegisterActivity extends AppCompatActivity {
     EditText email;
     EditText password;
     Button registerButton;
+    private ProgressDialog pd;
+
+    private static final Pattern PASSWORD_PATTERN =
+            Pattern.compile("^" +
+                    "(?=.*[0-9])" +         //at least 1 digit
+                    "(?=.*[a-z])" +         //at least 1 lower case letter
+                    "(?=.*[A-Z])" +         //at least 1 upper case letter
+                    "(?=.*[a-zA-Z])" +      //any letter
+                    "(?=.*[@#$%^&+=])" +    //at least 1 special character
+                    "(?=\\S+$)" +           //no white spaces
+                    ".{4,}" +               //at least 4 characters
+                    "$");
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +64,8 @@ public class RegisterActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         registerButton = findViewById(R.id.register_button);
+        pd = new ProgressDialog(this);
+        pd.setTitle("Please Wait");
 
         fAuth = FirebaseAuth.getInstance();
         user = fAuth.getCurrentUser();
@@ -91,16 +110,22 @@ public class RegisterActivity extends AppCompatActivity {
                     password.setError("Password is required.");
                     return;
                 }
+                if(!PASSWORD_PATTERN.matcher(pw).matches()){
+                    password.setError("Password is weak. Must contain atleast 1 digit, 1 uppercase letter, 1 lowercase letter, 1 special character");
+                    return;
+                }
 
                 if (pw.length() < 6) {
                     password.setError("Password must be >= 6 characters.");
                     return;
                 }
-
+                pd.setMessage("Registering your account");
+                pd.show();
                 fAuth.createUserWithEmailAndPassword(e_mail, pw).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            pd.dismiss();
                             Toast.makeText(RegisterActivity.this, "Registration successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                             //String user_id = mAuth.getCurrentUser().getUid();
@@ -115,6 +140,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                         } else {
+                            pd.dismiss();
                             Toast.makeText(RegisterActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
