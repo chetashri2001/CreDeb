@@ -88,6 +88,4 @@ public class BankUserDetails {
         this.mobile = mobile;
     }
 
-
-
 }
