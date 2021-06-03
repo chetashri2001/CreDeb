@@ -11,18 +11,16 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
         android:fontFamily="@font/bold"
         android:text="Welcome!"
         android:textColor="@color/black"
-
         android:textSize="45sp"
-        app:layout_constraintBottom_toTopOf="@+id/fname"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.091" />
 
     <EditText
         android:id="@+id/fname"
@@ -35,65 +33,68 @@
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/lname"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.215" />
 
     <EditText
         android:id="@+id/lname"
         android:layout_width="280dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="36dp"
         android:background="@drawable/input_field"
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/mobile"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
 
     <EditText
         android:id="@+id/mobile"
         android:layout_width="280dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="36dp"
         android:background="@drawable/input_field"
         android:ems="10"
         android:hint="Mobile Number"
         android:inputType="phone"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="280dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="36dp"
         android:background="@drawable/input_field"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="280dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginBottom="292dp"
         android:background="@drawable/input_field"
         android:ems="10"
         android:hint="Password"
@@ -104,6 +105,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Security pin"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
 
     <Button
         android:id="@+id/register_button"
@@ -140,19 +158,18 @@
 
     <TextView
         android:id="@+id/doLoginButton"
-        android:layout_width="66dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
         android:fontFamily="@font/bold"
         android:text="Login"
-        android:textColor="@color/pink"
+        android:textColor="@color/blue"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintVertical_bias="0.94" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

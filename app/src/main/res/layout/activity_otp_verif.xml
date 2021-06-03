@@ -61,35 +61,34 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+<!--        <TextView-->
+<!--            android:id="@+id/textView5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
 
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:fontFamily="@font/bold"
-            android:text="Phone Number"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:visibility="visible" />
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:fontFamily="@font/bold"-->
+<!--            android:text="Phone Number"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            android:visibility="visible" />-->
 
-        <EditText
-            android:id="@+id/phoneNumber"
-            android:layout_width="280dp"
-            android:layout_height="45dp"
-            android:ems="10"
-            android:hint="+91XXXXXXXXXX"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/input_field"
-            android:paddingRight="25dp"
-            android:visibility="visible"
+        <!--        <EditText-->
+<!--            android:id="@+id/phoneNumber"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="29dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="@drawable/input_field"-->
+<!--            android:ems="10"-->
+<!--            android:hint="+91XXXXXXXXXX"-->
+<!--            android:inputType="phone"-->
+<!--            android:padding="10dp"-->
 
-            android:inputType="phone"
-            android:padding="10dp"
-            android:textAlignment="center"
-            />
+<!--            android:paddingRight="25dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:visibility="visible" />-->
 
         <Button
             android:id="@+id/GETOTP"
@@ -97,7 +96,7 @@
             android:layout_height="wrap_content"
             android:visibility="visible"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="50dp"
             android:text="GET OTP"
             android:textColor="@color/white"
             android:background="@drawable/button_dark_blue"
@@ -155,7 +154,7 @@ android:orientation="vertical"
     android:textColor="@color/white"
     android:background="@drawable/button_dark_blue"
     android:textAlignment="center"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="15dp"
     />
     <TextView
         android:id="@+id/resend_code"
@@ -173,7 +172,7 @@ android:orientation="vertical"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:visibility="visible"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:text="ABORT"
         android:textColor="@color/white"
         android:background="@drawable/button_dark_blue"

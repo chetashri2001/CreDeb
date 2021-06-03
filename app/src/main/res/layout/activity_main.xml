@@ -30,7 +30,7 @@
         android:layout_marginStart="4dp"
         android:fontFamily="@font/bold"
         android:text="Register"
-        android:textColor="@color/pink"
+        android:textColor="@color/blue"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

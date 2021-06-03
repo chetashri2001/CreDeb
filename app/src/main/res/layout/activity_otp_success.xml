@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OtpSuccessActivity"
-    android:background="@drawable/background8">
+    android:background="@drawable/background8"
+    tools:context=".OtpSuccessActivity">
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +44,6 @@
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
 
 
     <TextView
@@ -92,12 +92,11 @@
         app:layout_constraintVertical_bias="0.371" />
 
     <TextView
-        android:id="@+id/textViewReceiver"
+        android:id="@+id/textViewReceiverAcc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bold"
         android:padding="10dp"
-
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,33 +105,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43" />
+
+
+    <TextView
+        android:id="@+id/textViewReceiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
     <Button
         android:id="@+id/button_proceed"
         android:layout_width="94dp"
         android:layout_height="48dp"
+        android:background="@drawable/button_dark_blue"
         android:text="Proceed"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/button_dark_blue"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <Button
         android:id="@+id/button_deny"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deny"
         android:background="@drawable/button_dark_blue"
+        android:text="Deny"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintVertical_bias="0.723" />
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_field"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Enter Pin"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
