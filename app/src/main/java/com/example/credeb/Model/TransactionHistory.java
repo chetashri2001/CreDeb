@@ -3,75 +3,75 @@ package com.example.credeb.Model;
 public class TransactionHistory {
     private String Amount;
     private String Date_and_Time;
-    private String Receiver;
-    private String Receiver_IFSC;
     private String Type_of_transaction;
-    private String Sender;
-    private String Sender_IFSC;
+    private String user1, user2, user2_ifsc,user1_ifsc;
 
     public TransactionHistory() {
     }
 
-    public TransactionHistory(String Amount, String Date_and_Time, String Receiver, String Receiver_IFSC, String Type_of_transaction, String Sender, String Sender_IFSC) {
-        this.Amount = Amount;
-        this.Date_and_Time = Date_and_Time;
-        this.Receiver = Receiver;
-        this.Receiver_IFSC = Receiver_IFSC;
-        this.Type_of_transaction= Type_of_transaction;
-        this.Sender= Sender;
-        this.Sender_IFSC= Sender_IFSC;
+    public TransactionHistory(String amount, String date_and_Time, String type_of_transaction, String user1, String user2, String user2_ifsc, String user1_ifsc) {
+        Amount = amount;
+        Date_and_Time = date_and_Time;
+        Type_of_transaction = type_of_transaction;
+        this.user1 = user1;
+        this.user2 = user2;
+        this.user2_ifsc = user2_ifsc;
+        this.user1_ifsc = user1_ifsc;
     }
 
     public String getAmount() {
         return Amount;
     }
 
-    public void setFname(String Amount) {
-        this.Amount = Amount;
+    public void setAmount(String amount) {
+        Amount = amount;
     }
 
     public String getDate_and_Time() {
         return Date_and_Time;
     }
 
-    public void setDate_and_Time(String Date_and_Time) {
-        this.Date_and_Time = Date_and_Time;
+    public void setDate_and_Time(String date_and_Time) {
+        Date_and_Time = date_and_Time;
     }
 
-    public String getReceiver() {
-        return Receiver;
-    }
-
-    public void setReceiver(String Receiver) {
-        this.Receiver = Receiver;
-    }
-
-    public String getReceiver_IFSC() {
-        return Receiver_IFSC;
-    }
-
-    public void setSender_IFSC(String Sender_IFSC) {
-        this.Sender_IFSC = Sender_IFSC;
-    }
-    public String getSender_IFSC() {
-        return Sender_IFSC;
-    }
-
-    public void setReceiver_IFSC(String Receiver_IFSC) {
-        this.Receiver_IFSC = Receiver_IFSC;
-    }
     public String getType_of_transaction() {
         return Type_of_transaction;
     }
 
-    public void setType_of_transaction(String Type_of_transaction) {
-        this.Type_of_transaction = Type_of_transaction;
-    }
-    public String getSender() {
-        return Sender;
+    public void setType_of_transaction(String type_of_transaction) {
+        Type_of_transaction = type_of_transaction;
     }
 
-    public void setSender(String Sender) {
-        this.Sender = Sender;
+    public String getUser1() {
+        return user1;
+    }
+
+    public void setUser1(String user1) {
+        this.user1 = user1;
+    }
+
+    public String getUser2() {
+        return user2;
+    }
+
+    public void setUser2(String user2) {
+        this.user2 = user2;
+    }
+
+    public String getUser2_ifsc() {
+        return user2_ifsc;
+    }
+
+    public void setUser2_ifsc(String user2_ifsc) {
+        this.user2_ifsc = user2_ifsc;
+    }
+
+    public String getUser1_ifsc() {
+        return user1_ifsc;
+    }
+
+    public void setUser1_ifsc(String user1_ifsc) {
+        this.user1_ifsc = user1_ifsc;
     }
 }
