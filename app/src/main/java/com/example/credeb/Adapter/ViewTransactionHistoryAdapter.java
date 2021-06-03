@@ -57,50 +57,62 @@ public class ViewTransactionHistoryAdapter<firebaseUser> extends ArrayAdapter {
         TextView ifsc_code = listItemView.findViewById(R.id.textView24);
         TextView balance = listItemView.findViewById(R.id.textView25);
         TextView balance1 = listItemView.findViewById(R.id.textView112);
-        DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference().child("App Database").child("User bank details");
-        final String[] accountNumber = new String[1];
+
+       // TransactionHistory transactionHistory = transactionHistoryActivity.get(position);
+
+//        bank_name.setText("User2" + transactionHistory.getUser2());
+//        balance.setText("Receiver IFSC: " + transactionHistory.getUser2_ifsc());
+//        account_no.setText("Amount: " + transactionHistory.getAmount());
+//        ifsc_code.setText("Date and time: " + transactionHistory.getDate_and_Time());
+//        balance1.setText("Type of transaction: " + transactionHistory.getType_of_transaction());
+
+
+
+            DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference().child("App Database").child("User bank details");
+    final String[] accountNumber = new String[1];
         reference2.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Log.d("sender", "hi " + accountNumber[0]);
-                for (DataSnapshot snap : snapshot.getChildren()) {
-                    Log.d("sender", "hi in " + accountNumber[0]);
-                    UserBankDetails userBankDetails = snap.getValue(UserBankDetails.class);
-                    assert userBankDetails != null;
-                    String val = userBankDetails.getUserID();
-                    String ifsc = userBankDetails.getIfsc();
-                    Log.d("acc", "get val " + val);
-                    if (val.equals(userID)) {
-                        accountNumber[0] = userBankDetails.getAccount_no();
+@Override
+public void onDataChange(@NonNull DataSnapshot snapshot) {
+        Log.d("sender", "hi " + accountNumber[0]);
+        for (DataSnapshot snap : snapshot.getChildren()) {
+        Log.d("sender", "hi in " + accountNumber[0]);
+        UserBankDetails userBankDetails = snap.getValue(UserBankDetails.class);
+        assert userBankDetails != null;
+        String val = userBankDetails.getUserID();
+        String ifsc = userBankDetails.getIfsc();
+        Log.d("acc", "get val " + val);
+        if (val.equals(userID)) {
+        accountNumber[0] = userBankDetails.getAccount_no();
 
-                        TransactionHistory transactionHistory = transactionHistoryActivity.get(position);
-                        if (accountNumber[0].equals(transactionHistory.getSender()) && (transactionHistory.getType_of_transaction()).equals("Debit")) {
-                            Log.d("ADAPTER", "acc sender" + accountNumber[0]);
-                            bank_name.setText("Receiver: " + transactionHistory.getReceiver());
-                            balance.setText("Receiver IFSC: " + transactionHistory.getReceiver_IFSC());
-                            account_no.setText("Amount: " + transactionHistory.getAmount());
-                            ifsc_code.setText("Date and time: " + transactionHistory.getDate_and_Time());
-                            balance1.setText("Type of transaction: " + transactionHistory.getType_of_transaction());
-                        }
-                        if (accountNumber[0].equals(transactionHistory.getReceiver()) && (transactionHistory.getType_of_transaction()).equals("Credit")) {
-                            Log.d("ADAPTER", "acc receiver" + accountNumber[0]);
-                            bank_name.setText("Sender: " + transactionHistory.getSender());
-                            balance.setText("Sender IFSC: " + transactionHistory.getSender_IFSC());
-                            account_no.setText("Amount: " + transactionHistory.getAmount());
-                            ifsc_code.setText("Date and time: " + transactionHistory.getDate_and_Time());
-                            balance1.setText("Type of transaction: " + transactionHistory.getType_of_transaction());
+        TransactionHistory transactionHistory = transactionHistoryActivity.get(position);
+        if (accountNumber[0].equals(transactionHistory.getUser1()) && (transactionHistory.getType_of_transaction()).equals("Debit")) {
+        Log.d("ADAPTER", "acc sender" + accountNumber[0]);
+        bank_name.setText("Receiver: " + transactionHistory.getUser2());
+        balance.setText("Receiver IFSC: " + transactionHistory.getUser2_ifsc());
+        account_no.setText("Amount: " + transactionHistory.getAmount());
+        ifsc_code.setText("Date and time: " + transactionHistory.getDate_and_Time());
+        balance1.setText("Type of transaction: " + transactionHistory.getType_of_transaction());
+        }
+        if (accountNumber[0].equals(transactionHistory.getUser1()) && (transactionHistory.getType_of_transaction()).equals("Credit")) {
+        Log.d("ADAPTER", "acc receiver" + accountNumber[0]);
+        bank_name.setText("Sender: " + transactionHistory.getUser2());
+        balance.setText("Sender IFSC: " + transactionHistory.getUser2_ifsc());
+        account_no.setText("Amount: " + transactionHistory.getAmount());
+        ifsc_code.setText("Date and time: " + transactionHistory.getDate_and_Time());
+        balance1.setText("Type of transaction: " + transactionHistory.getType_of_transaction());
 
-                        }
-                    }
+        }
+        }
 
-                }
-            }
+        }
+        }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+@Override
+public void onCancelled(@NonNull DatabaseError error) {
 
-            }
+        }
         });
+
 
 
         return listItemView;
