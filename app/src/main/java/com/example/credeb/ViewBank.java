@@ -1,13 +1,13 @@
 package com.example.credeb;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ListView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.credeb.Adapter.ViewBankDetailsAdapter;
-import com.example.credeb.Model.AppBankAccount;
+import com.example.credeb.Model.UserBankDetails;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -20,10 +20,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ViewBank<userID> extends AppCompatActivity {
-    ListView myListView;
-    List<AppBankAccount> bankList;
-    DatabaseReference reference;
     private final FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+    ListView myListView;
+    List<UserBankDetails> bankList;
+    DatabaseReference reference;
     String userID;
 
     {
@@ -45,7 +45,7 @@ public class ViewBank<userID> extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 bankList.clear();
                 for(DataSnapshot bank : snapshot.getChildren()){
-                    AppBankAccount appBankAccount = bank.getValue(AppBankAccount.class);
+                    UserBankDetails appBankAccount = bank.getValue(UserBankDetails.class);
                     assert appBankAccount != null;
                     if(appBankAccount.getUserID().equals(userID)) {
                         bankList.add(appBankAccount);
