@@ -5,17 +5,17 @@ public class BankAccount {
     private String account_No;
     private String account_balance;
     private String account_type;
-    private String cust_id;
+    private String cust_ID;
     private String id;
 
     public BankAccount() {
     }
 
-    public BankAccount(String account_No, String account_balance, String account_type, String cust_id, String id) {
+    public BankAccount(String account_No, String account_balance, String account_type, String cust_ID, String id) {
         this.account_No = account_No;
         this.account_balance = account_balance;
         this.account_type = account_type;
-        this.cust_id = cust_id;
+        this.cust_ID = cust_ID;
         this.id = id;
     }
 
@@ -43,14 +43,14 @@ public class BankAccount {
         this.account_type = account_type;
     }
 
-    public String getCust_id()
+    public String getCust_ID()
     {
-        return cust_id;
+        return cust_ID;
     }
 
-    public void setCust_id(String cust_id)
+    public void setCust_ID(String cust_ID)
     {
-        this.cust_id = cust_id;
+        this.cust_ID = cust_ID;
     }
 
     public String getId() {

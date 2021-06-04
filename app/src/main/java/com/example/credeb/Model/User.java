@@ -6,16 +6,18 @@ public class User {
     private String mobile;
     private String email_ID;
     private String id;
+    private String pin;
 
     public User() {
     }
 
-    public User(String fname, String lname, String mobile, String email_ID, String id) {
+    public User(String fname, String lname, String mobile, String email_ID, String id, String pin) {
         this.fname = fname;
         this.lname = lname;
         this.mobile = mobile;
         this.email_ID = email_ID;
         this.id = id;
+        this.pin = pin;
     }
 
     public String getFname() {
@@ -56,5 +58,13 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getPin() {
+        return pin;
+    }
+
+    public void setPin(String pin) {
+        this.pin = pin;
     }
 }
