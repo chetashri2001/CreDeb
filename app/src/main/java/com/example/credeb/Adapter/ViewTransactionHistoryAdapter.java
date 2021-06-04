@@ -12,7 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-
 import com.example.credeb.Model.TransactionHistory;
 import com.example.credeb.Model.UserBankDetails;
 import com.example.credeb.R;
@@ -24,15 +23,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.HashMap;
 import java.util.List;
 
 public class ViewTransactionHistoryAdapter<firebaseUser> extends ArrayAdapter {
 
-    private Activity mContext;
     List<TransactionHistory> transactionHistoryActivity;
-    private FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
     String account;
+    private Activity mContext;
+    private FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
 
     public ViewTransactionHistoryAdapter(Activity mContext, List<TransactionHistory> transactionHistoryActivity) {
