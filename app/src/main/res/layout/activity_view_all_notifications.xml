@@ -33,10 +33,9 @@
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
     <ListView
         android:id="@+id/myListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp" />
+        android:padding="5dp" />
 </LinearLayout>

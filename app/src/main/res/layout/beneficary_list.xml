@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        android:text="Name"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
         android:fontFamily="@font/regular"
         android:text="bank_name"
-        android:textColor="@color/black"
         android:textSize="18dp" />
 
     <TextView
@@ -19,9 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
         android:fontFamily="@font/regular"
         android:text="account_no"
-        android:textColor="@color/black"
         android:textSize="18dp"
         />
 
@@ -30,31 +40,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
         android:fontFamily="@font/regular"
         android:text="ifsc_code"
-        android:textColor="@color/black"
         android:textSize="18dp"
         />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/regular"
-        android:text="balance"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        />
-
-    <TextView
-        android:id="@+id/textView112"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/regular"
-        android:text="type"
-        android:textColor="@color/black"
-        android:textSize="18dp" />
 
 </LinearLayout>
